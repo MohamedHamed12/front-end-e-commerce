@@ -7,6 +7,7 @@ import ProductDetails from './pages/ProductDetails';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 function App() {
+  
   return (
     <Router>
       <Routes>

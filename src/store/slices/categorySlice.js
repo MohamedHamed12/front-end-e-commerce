@@ -7,7 +7,7 @@ export const getCategories = createAsyncThunk('category/getCategories', async ()
   return response.data;
 });
 
-const categorySlice = createSlice({
+const  categorySlice = createSlice({
   name: 'category',
   initialState: { list: [] },
   reducers: {},
