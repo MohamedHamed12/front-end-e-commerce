@@ -1,5 +1,7 @@
 # E-Commerce Application
 
+![alt text](readme/home.png)
+
 This project is a simple React-based e-commerce application that provides users with an interactive interface for browsing products, viewing product details, and user authentication via login and signup pages. It is designed using modern practices like React Router for navigation and clean, reusable component structures.
 
 ---
