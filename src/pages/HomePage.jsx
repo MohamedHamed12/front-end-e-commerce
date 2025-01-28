@@ -28,7 +28,7 @@ const HomePage = () => {
     <div>
       <Navbar />
       <CategoryFilter categories={categories} onSelectCategory={setSelectedCategory} />
-      {/* <Carousel products={products.slice(0, 5)} /> Show the first 5 products in carousel */}
+      <Carousel products={products.slice(0, 8)}  /> 
 
       <div className="p-6">
         <h2 className="text-xl font-bold mb-4">All Products</h2>
