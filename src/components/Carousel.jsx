@@ -8,7 +8,7 @@ const Carousel = ({ products }) => {
   const getProductsPerSlide = () => {
     if (window.innerWidth < 640) return 1; // Mobile
     if (window.innerWidth < 1024) return 2; // Tablet
-    return 3; // Desktop
+    return 4; // Desktop
   };
 
   const [productsPerSlide, setProductsPerSlide] = useState(getProductsPerSlide());

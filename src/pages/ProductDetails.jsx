@@ -35,7 +35,7 @@ const ProductDetails = () => {
   if (!product) return <p>Product not found</p>;
 
   return (
-    <div className="bg-gray-100 h-screen">
+    <div className="bg-gray-100 h-screen-200">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-wrap -mx-4">
           {/* Product Images */}
