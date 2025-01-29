@@ -25,12 +25,14 @@ const HomePage = () => {
   }, [dispatch, selectedCategory]);
 
   return (
-    <div>
+    <div >
       <Navbar />
+     
+
       <CategoryFilter categories={categories} onSelectCategory={setSelectedCategory} />
       <Carousel products={products.slice(0, 8)}  /> 
 
-      <div className="p-6">
+      <div className=" container mx-auto p-6">
         <h2 className="text-xl font-bold mb-4">All Products</h2>
         {loading ? (
           <p>Loading products...</p>

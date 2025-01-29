@@ -48,7 +48,7 @@ const Carousel = ({ products }) => {
   };
 
   return (
-    <div className="relative w-full bg-gray-100 " role="region" aria-label="Product Carousel">
+    <div className=" container mx-auto relative w-full bg-gray-100 " role="region" aria-label="Product Carousel">
       <div className="carousel h-80 overflow-hidden ">
         <div
           className="carousel-body h-full flex transition-transform duration-500 ease-in-out "
