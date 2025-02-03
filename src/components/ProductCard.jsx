@@ -1,8 +1,16 @@
 // src/components/ProductCard.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+import { addItem } from '../store/slices/CartSlice';
 
 const ProductCard = ({ product }) => {
+  const  dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    
+    dispatch(addItem(product));
+  };
   return (
     <div className="group border rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow duration-200 ease-in-out bg-white">
       <Link to={`/product/${product.id}`} className="block">
@@ -29,7 +37,8 @@ const ProductCard = ({ product }) => {
 
       {/* Action Buttons */}
       <div className="mt-4 flex justify-between items-center">
-        <button
+        <button 
+          onClick={handleAddToCart}
           className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg shadow-sm hover:bg-blue-700 transition-colors duration-200"
         >
           Add to Cart
