@@ -16,19 +16,15 @@ const Navbar = () => {
     <>
       <div className="container mx-auto fix">
         <div className="flex justify-between items-center py-4">
+          <h1 className="text-2xl font-bold">E-commerce</h1>
 
-          <Link to="/" > 
-           <h1 className="text-2xl font-bold">E-commerce</h1> 
-           </Link>
           <div className="flex space-x-4">
             <Link to="/" className="hover:underline">Home</Link>
             <Link to="/" className="hover:underline">About</Link>
             <Link to="/" className="hover:underline">Contact</Link>
           </div>
 
-          <div className='flex  items-center justify-between  space-x-4'> 
-
-
+ 
           <CartIcon />
 
           {isAuthenticated ? (
@@ -42,7 +38,6 @@ const Navbar = () => {
               <Link to="/signup" className="hover:underline">Sign Up</Link>
             </div>
           )}
-           </div>
         </div>
       </div>
       <div className="border-b border-gray-300 w-full"></div>
