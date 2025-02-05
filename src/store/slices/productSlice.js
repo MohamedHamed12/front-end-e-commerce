@@ -7,12 +7,10 @@ export const fetchProductsByCategory = createAsyncThunk(
   'products/fetchByCategory',
   async (category) => {
     const url = category 
-      // ? `https://fakestoreapi.com/products/category/${category}`
-      // : 'https://fakestoreapi.com/products';
-      ? `http://127.0.0.1:8000/api/products/category=${category}`
-      : 'http://127.0.0.1:8000/api/products';
+      ? `https://fakestoreapi.com/products/category/${category}`
+      : 'https://fakestoreapi.com/products';
     const response = await axios.get(url);
-    return response.data['data'];
+    return response.data;
   }
 );
 

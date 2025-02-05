@@ -61,7 +61,7 @@ const Carousel = ({ products }) => {
                   <div className="bg-base-200/50 flex h-full justify-center p-6 rounded-lg shadow-md">
                     <div className="self-center text-center">
                       <img
-                        src={product.photo_url}
+                        src={product.image}
                         alt={product.title.slice(0, 20)}
                         className="w-32 h-32 object-cover mx-auto mt-4 mb-4 rounded-lg"
                       />

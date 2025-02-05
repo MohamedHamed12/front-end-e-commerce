@@ -6,10 +6,10 @@ const ProductCard = ({ product }) => {
   return (
     <div className="group border rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow duration-200 ease-in-out bg-white">
       <Link to={`/product/${product.id}`} className="block">
-        {/* photo_url Section */}
+        {/* Image Section */}
         <div className="relative w-full h-56 flex items-center justify-center mb-4 overflow-hidden bg-gray-100 rounded-xl">
           <img
-            src={product.photo_url}
+            src={product.image}
             alt={product.title}
             className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-200 ease-in-out"
           />
