@@ -27,34 +27,49 @@ This project is a simple React-based e-commerce application that provides users 
 The project is structured as follows:
 
 ```bash
-── App.css
-├── App.js
-├── App.test.js
-├── components
-│   ├── Carousel.jsx
-│   ├── Navbar.jsx
-│   └── ProductCard.jsx
-├── features
-│   └── category
-│       └── CategoryFilter.jsx
-├── index.css
-├── index.js
-├── logo.svg
-├── pages
-│   ├── HomePage.jsx
-│   ├── Login.jsx
-│   ├── ProductDetails.jsx
-│   └── Signup.jsx
-├── reportWebVitals.js
-├── services
-│   └── api.js
-├── setupTests.js
-└── store
-    ├── slices
-    │   ├── authSlice.js
-    │   ├── categorySlice.js
-    │   └── productSlice.js
-    └── store.js
+
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── images
+│   │   └── hero.png
+│   ├── index.html
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── components
+│   │   ├── Carousel.jsx
+│   │   ├── CartIcon.jsx
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── features
+│   │   └── category
+│   │       └── CategoryFilter.jsx
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── pages
+│   │   ├── CartPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── Login.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├── ProductPage.jsx
+│   │   └── Signup.jsx
+│   ├── services
+│   │   └── api.js
+│   ├── setupTests.js
+│   └── store
+│       ├── slices
+│       │   ├── authSlice.js
+│       │   ├── bannerSlice.js
+│       │   ├── CartSlice.js
+│       │   ├── categorySlice.js
+│       │   └── productSlice.js
+│       └── store.js
+└── tailwind.config.js
 
 ```
 
@@ -120,14 +135,17 @@ The application supports the following routes:
 - **CSS/Tailwind CSS**: Used for styling the components.
 
 ---
-
 ## Future Improvements
 
-- Add a shopping cart feature.
-- Implement user authentication with a backend service.
-- Add unit tests for components and pages.
-- Enhance product filtering and sorting functionality.
-- Integrate a database or API for dynamic data.
+- [x] Add a shopping cart feature  
+- [x] Implement user authentication with a backend service  
+- [x] Integrate a database or API for dynamic data  
+- [ ] Add unit tests for components and pages  
+- [ ] Enhance product filtering and sorting functionality  
+- [ ] Add pagination  
+- [ ] Integrate payment (Paymob)  
+- [ ] Implement chat support  
+- [ ] Add profile settings  
 
 ---
 
